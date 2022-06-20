@@ -1,0 +1,23 @@
+.post {
+    &__title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        margin-top: 14px;
+    }
+
+    &__text {
+        font-size: 20px;
+        margin-top: 6px;
+    }
+
+    margin: 50px 0;
+    @media screen and (max-width: 596px) {
+        &__title {
+            font-size: 24px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+}

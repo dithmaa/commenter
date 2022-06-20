@@ -1,0 +1,115 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    max-width: 479px;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 5px;
+
+    &-fields {
+        margin-bottom: 40px;
+    }
+
+    &-message {
+        display: flex;
+        align-items: center;
+
+        .popup-icon {
+            margin-right: 20px;
+        }
+    }
+
+    &-text {
+        font-size: 20px;
+        color: #6B6B6B;
+
+    }
+
+    &-icon {
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    &-close {
+        padding: 28px;
+        padding-bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        transition: .25s ease opacity, .25s ease transform;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.8;
+            transform: translateY(2px);
+        }
+
+        img {
+            width: 21px;
+            height: 21px;
+        }
+    }
+
+    .toggler {
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        padding: 21px 84px;
+
+    }
+
+    &-btn {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  .popup {
+    transform: translate(-50%,0);
+    top: 12vh;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 596px) {
+    .popup {
+        max-width: 360px;
+        &-text {
+          font-size: 18px;
+          margin-bottom: 0;
+        }
+        &-fields{
+          margin-bottom: 16px;
+        }
+        &-message {
+          flex-direction: column;
+          padding-bottom: 20px;
+        }
+        &-close{ 
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        &-content {
+          padding-right: 40px;
+          padding-left: 40px;
+        }
+        .toggler {
+          margin-bottom: 26px;
+        }
+        &-btn {
+          margin: 10px 0;
+          margin-bottom: 10px;
+        }
+        
+      }
+      
+}

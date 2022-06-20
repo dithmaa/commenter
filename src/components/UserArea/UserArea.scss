@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.user-area {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .25s ease opacity;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &__name {
+        font-size: 20px;
+        color: $accent;
+        margin: 8px 0;
+    }
+
+    &__avatar {
+        width: 53px;
+        height: 53px;
+        background-color: #fff;
+        border-radius: 100px;
+        margin-left: 24px;
+        margin-right: 15px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__arrow {
+        img {
+            width: 15px;
+        }
+    }
+
+}
